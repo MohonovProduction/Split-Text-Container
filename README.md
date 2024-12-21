@@ -12,8 +12,10 @@ By Michael Mohonov
 4. In Finder/Explorer, locate and select __SplitTextContainer.jsx__, then click __Open__.  
    <img width="577" alt="File and " src="https://github.com/user-attachments/assets/dd75a602-b95f-4897-b221-72cdd86a29e0" />
 
-5. Enter a phrase _or_ click "Split Text by Line Breaks".
-6. Enjoy!
+5. Enter a phrase _or_ click "Split Text by Line Breaks".   
+   <img width="451" alt="UI panel" src="https://github.com/user-attachments/assets/7cf2a985-de66-4f4f-97ec-3e87924de6b9" />
+
+7. Enjoy!
 
 ---
 
