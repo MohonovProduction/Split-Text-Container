@@ -13,17 +13,26 @@
     // Create a dialog panel
     var dialog = new Window('dialog', 'Split Text Container | by Michael Mohonov');
 
+    // Create a group to hold the elements in one line
+    var firstRow = dialog.add('group');
+    firstRow.alignment = 'left';
+
     // Add a label for the input field
-    dialog.add('statictext', undefined, 'Enter separator text:');
+    firstRow.add('statictext', undefined, 'Enter separator phrase: ');
 
     // Add an input field for the separator
-    var separatorInput = dialog.add('edittext', undefined, ',');  // Default is a comma
+    var separatorInput = firstRow.add('edittext', undefined, ',');  // Default is a comma
     separatorInput.characters = 20;  // Set the width of the input field
 
     // Add a button to the dialog
-    var splitButton = dialog.add('button', undefined, 'Split Text');
+    var splitButton = firstRow.add('button', undefined, 'Split');
 
-    var splitByLineBreaksButton = dialog.add('button', undefined, 'Split Text by line breaks');
+    var secondRow = dialog.add('group');
+    secondRow.alignment = 'left';
+
+    secondRow.add('statictext', undefined, 'or ');
+
+    var splitByLineBreaksButton = secondRow.add('button', undefined, 'Split Text by line breaks');
 
     // Function that splits the text when the button is clicked
     splitButton.onClick = function () {
